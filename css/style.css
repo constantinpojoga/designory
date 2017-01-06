@@ -23,10 +23,15 @@ html {
 
 .navbar {
   margin-bottom: 0;
+  background-color: #FFF;
 }
 
 .navbar a {
   height: 80px;
+}
+
+.navbar .active {
+  color: yellow;
 }
 
 /*Hero */
@@ -35,7 +40,18 @@ html {
 .hero-main-background {
   min-height: calc(100vh - 80px);
   background-color: lightgrey;
-  border: 1px solid red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-main-background-left {
+  background-image: url('http://spyglassinspections.net/wp-content/uploads/2014/04/kitchen1.jpg');
+  
+}
+
+.hero-main-background-right {
+  background-image: url('http://www.homeandlivingdecor.com/wp-content/uploads/2016/04/split-level-remodel-for-a-traditional-exterior-with-a-double-doors-and-exterior-by-knight-construction-design-inc.jpg');
 }
 
 .hero-main-text {
@@ -52,13 +68,18 @@ html {
 
 .hero-main-text h1 {
   position: relative;
-  margin: 20px 0 30px 0;
+  margin: 20px 10px 30px 10px;
   font-family: 'Ek Mukta', sans-serif !important;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 76px;
   line-height: 0.9;
+   text-shadow:
+    -1px -1px 0 #777,  
+    1px -1px 0 #777,
+    -1px 1px 0 #777,
+    1px 1px 0 #777;
   
 }
 
