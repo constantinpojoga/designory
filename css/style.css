@@ -1,12 +1,122 @@
 
+html {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+*,*::before,*::after {
+    box-sizing:inherit;
+}
+
+.yellow {
+    color: #F7B70B !important;
+}
+
+
+/*Navigation
+------------------------------------ */
+.dropdown-menu,
+.navbar-toggle {
+  border-radius: 0;
+}
+
 .navbar {
-  border-bottom: 1px solid lightgrey;
-  background-color: #FFF;
-  color: #222;
+  margin-bottom: 0;
 }
 
-.active {
-  color: #F5B719;
+.navbar a {
+  height: 80px;
 }
 
-.navbar
+/*Hero */
+/* --------------------------------- */
+
+.hero-main-background {
+  min-height: calc(100vh - 80px);
+  background-color: lightgrey;
+  border: 1px solid red;
+}
+
+.hero-main-text {
+  margin-top: 170px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.hero-main-text h4 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.hero-main-text h1 {
+  position: relative;
+  margin: 20px 0 30px 0;
+  font-family: 'Ek Mukta', sans-serif !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 76px;
+  line-height: 0.9;
+  
+}
+
+.hero-main-text-left {
+  border-right: 10px solid #F7B70B;
+  padding-right: 10px;
+}
+
+.hero-main-text-right {
+  border-left: 10px solid #F7B70B;
+  padding-left: 10px;
+}
+
+/*Button
+------------------------------------ */
+
+.btn-iv {
+  color: #fff;
+  background: #111;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 20px 30px;
+  display: inline-block;
+}
+
+.btn-iv i {
+  margin: 0;
+}
+
+.btn-iv:hover {
+  background: #111;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+
+}
+
+.btn-u--construction,
+.btn-u--construction:focus {
+  color: #fff;
+  background: #111;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 20px 30px;
+}
+.btn-u--construction:hover {
+  background: #111;
+  color: #fff;
+  opacity: 0.8;
+}
+.btn-u--construction.trim::before {
+  border: 2px solid #f7b70b;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+}
+
+
