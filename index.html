@@ -129,12 +129,29 @@
 
 
 
-<div class="container">
-  <h3>Get in touch</h3>
-  <h4>Tel (123) 456-7890</h4>
-  <h4>email@iv-construction.com</h4>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Get in touch</h3>
+        <h4>Tel (123) 456-7890</h4>
+        <h4>email@iv-construction.com</h4>
+      </div>
 
+    <div class="col-sm-5">
+      <form class="form-horizontal mail-me-form hidden-xs">
+        <div class="form-group">
+          <label class="control-label" for="inputName">Your name</label>
+          <input id="inputName" class="form-control" type="text" name="name" placeholder="Your name" disabled="disabled">
+          <label class="control-label" for="inputEmail">Your email</label>
+          <input id="inputEmail" class="form-control" type="email" name="email" placeholder="Your email address" disabled="disabled">
+          <label class="control-label" for="inputMessage">Send me a message...</label>
+          <textarea  class="form-control" rows="5" id="inputMessage" placeholder="Your message here..." disabled="disabled"></textarea>
+          <button class="btn btn-default disabled" type="button">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
 
