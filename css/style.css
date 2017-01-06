@@ -27,11 +27,16 @@ html {
 }
 
 .navbar a {
-  height: 80px;
+  margin: 15px 5px;
+  text-transform: uppercase; 
+  font-weight: bold;
 }
 
-.navbar .active {
-  color: yellow;
+.navbar-nav>.active>a, 
+.navbar a:hover,
+.navbar a:focus {
+  color: #F7B70B !important;
+  background-color: #FFF !important;
 }
 
 /*Hero */
@@ -66,6 +71,14 @@ html {
   line-height: 1.6;
 }
 
+.hero-main-text h4,
+.hero-main-text h1 {
+  -webkit-text-stroke: 1px rgba(0,0,0,0.2);
+          text-stroke: 1px rgba(0,0,0,0.2);
+  -webkit-text-stroke-width: thin;
+          text-stroke-width: thin;
+}
+
 .hero-main-text h1 {
   position: relative;
   margin: 20px 10px 30px 10px;
@@ -75,12 +88,6 @@ html {
   font-weight: bold;
   font-size: 76px;
   line-height: 0.9;
-   text-shadow:
-    -1px -1px 0 #777,  
-    1px -1px 0 #777,
-    -1px 1px 0 #777,
-    1px 1px 0 #777;
-  
 }
 
 .hero-main-text-left {
