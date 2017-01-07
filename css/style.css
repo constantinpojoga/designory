@@ -100,7 +100,98 @@ html {
   padding-left: 10px;
 }
 
-/*Button
+/*Aboutus*/
+/*----------------------------------*/
+.aboutus {
+  min-height: 500px;
+  /*border: 1px solid blue;*/
+}
+
+
+/*Services*/
+/*---------------------------------*/
+.services {
+  margin: 0;
+  padding: 0; 
+  /*border: 1px solid green;*/
+}
+
+.services-example {
+  /*border: 1px solid #aaa;*/
+  /*margin-top: 5px;*/
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-color: lightgrey;*/
+  color: #FFF;
+}
+
+.services-text-middle {
+  position: relative;
+  top: 80px;
+}
+
+.services-example--bg0,
+.services-example--bg1,
+.services-example--bg2,
+.services-example--bg3,
+.services-example--bg4,
+.services-example--bg5,
+.services-example--bg6,
+.services-example--bg7,
+.services-example--bg8,
+.services-example--bg9 {
+  background: no-repeat scroll 50% 0 / cover;
+}
+
+.services-example--bg0 { background: url(http://www.seriouseats.com/assets_c/2009/09/20080306-cabinetry-thumb-625xauto-49743.jpg) }
+.services-example--bg1 { background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgIpGP6_cwaF-WB06Hej3CckPgB0xpKYnJtqtT_-XPgtYCc89U) }
+.services-example--bg2 { background: url(http://www.harrisexteriors.com/images/soffitfasciasid1.jpg) }
+.services-example--bg3 { background: url(https://s-media-cache-ak0.pinimg.com/736x/ca/34/83/ca3483060e12f1d2f355d80cedb2de9c.jpg) }
+.services-example--bg4 { background: url(http://cdn1.bigcommerce.com/server3600/561fc/products/276/images/3234/Leesburg-wood-mantel-white__00231.1362089671.1280.1280.JPG?c=2) }
+.services-example--bg5 { background: url(http://www.dunkirksupply.com/images/Framing%20Lumber.jpg) }
+.services-example--bg6 { background: url(https://s-media-cache-ak0.pinimg.com/originals/d5/89/70/d58970a207fb07581afe810b1b48da74.jpg) }
+.services-example--bg7 { background: url(http://www.freshcoatmarietta.com/images/pages/construction-painting.jpg) }
+.services-example--bg8 { background: url(http://porch.com/advice/wp-content/uploads/2014/10/stairway-DIY-960x500-768x489.jpg) }
+.services-example--bg9 { background: url(http://www.valleyfloors.co.uk/wp-content/uploads/2015/01/bathroom_tiles.jpg) }
+
+.services-example {
+  /*min-height: 400px;*/
+  position: relative;
+  background-size: 100% 100% ;
+  transition: all .5s;
+  z-index: 1;
+}
+.services-example:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+.services-example:hover {
+  background-size: 120% 120%;
+  transition: all .5s;
+}
+
+.services-example__title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.services-example__text {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+/*Buttons
 ------------------------------------ */
 
 .btn-iv {
@@ -109,7 +200,7 @@ html {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11px;
-  padding: 20px 30px;
+  padding: 17px 20px;
   display: inline-block;
 }
 
@@ -146,6 +237,15 @@ html {
   right: 8px;
   bottom: 8px;
 }
+
+/*Testimonials*/
+/*---------------------------------*/
+.testimonials {
+  color: #fff;
+  background: #f7b70b;
+  min-height: 300px;
+}
+
 
 /*Footer*/
 /*----------------------------------*/
