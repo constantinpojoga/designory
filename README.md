@@ -3,4 +3,4 @@
 
 * app/index.html
 
-* Run $gulp to compile less files
+* Run $gulp to compile Sass files
