@@ -495,13 +495,18 @@ template {
 header {
   position: relative;
   overflow: hidden;
-  color: #111; }
+  color: #111;
+  min-height: 85px; }
   header h1.logo {
+    margin-top: 23px;
     position: relative;
     float: left;
-    font-size: 35px; }
+    font-size: 30px; }
     header h1.logo span {
-      font-size: 13px; }
+      font-size: 11px;
+      position: relative;
+      top: -9px;
+      left: -2px; }
 
 #menu-toggle {
   display: block;
@@ -523,6 +528,7 @@ ul {
   margin-right: 0; }
 
 li {
+  color: #111;
   margin-top: 10px;
   font-size: 12px;
   padding: 1.4em 0 1em 2em;
@@ -546,8 +552,8 @@ li {
 
 footer {
   clear: both;
-  height: 60px;
-  font-size: 12px;
+  height: 65px;
+  font-size: 10px;
   border-top: 2px solid black;
   text-transform: uppercase; }
 
@@ -556,11 +562,11 @@ footer {
 
 .btn {
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 4px;
   color: white;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 15px 50px; }
+  padding: 13px 40px 11px 40px; }
 
 .btn-black {
   background-color: #000; }
@@ -578,35 +584,41 @@ p {
   line-height: 1.4em; }
 
 .negative-margin-top {
-  margin-top: -100px; }
+  margin-top: -90px; }
 
 .hero {
-  min-height: 480px;
+  min-height: 500px;
   background: #eee;
   border-top: 2px solid #000;
   border-bottom: 2px solid #ccc; }
   .hero .hero-center-text {
     position: relative;
-    left: 80px;
-    top: 80px; }
+    left: 95px;
+    top: 85px; }
   .hero h1 {
-    margin-top: 5px;
+    margin-top: 0px;
     font-size: 50px;
-    margin-bottom: 15px; }
+    margin-bottom: 20px;
+    line-height: 1.05em; }
   .hero h3 {
     font-size: 24px;
     margin: 0; }
 
 .section-1 .article-one-third {
-  border: 1px solid gray;
   background: white;
-  min-height: 350px;
+  min-height: 320px;
   padding: 10px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 0px 2px 2px #ccc;
+  box-shadow: 0px 0px 2px 2px #ccc; }
+  .section-1 .article-one-third h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 18px 0 -10px 0; }
   .section-1 .article-one-third .single-article:first-child {
     margin-right: 0px; }
   .section-1 .article-one-third .single-article-photo {
-    height: 150px;
+    height: 145px;
     display: block; }
 
 .article-photo--1 {
@@ -619,21 +631,38 @@ p {
   background: #666; }
 
 .section-2 {
-  padding: 15px;
+  padding: 15px 100px 0 0;
   clear: both;
-  margin-bottom: 40px; }
+  margin-bottom: 50px; }
   .section-2 .article-one-half {
-    border: 1px solid gray;
-    height: 450px;
+    -webkit-box-shadow: 0px 0px 1px 1px #ccc;
+    box-shadow: 0px 0px 1px 1px #ccc;
+    height: 410px;
     margin: 0 45px 0px -15px;
-    padding: 10px; }
+    padding: 12px; }
     .section-2 .article-one-half .photo-one-half {
       background-color: #999;
       height: 100%; }
   .section-2 .razda-msg {
     text-align: justify;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1.53em;
+    margin-bottom: 105px; }
     .section-2 .razda-msg span {
+      font-size: 14px;
       color: white;
-      -webkit-text-stroke: 1px #666;
-      text-stroke: 1px grey; }
+      -webkit-text-stroke: 1px #999;
+      text-stroke: 1px #999;
+      -webkit-text-stroke-width: thin;
+      text-stroke-width: thin; }
+
+.msg-one-half h1 {
+  margin-top: 5px;
+  margin-bottom: -10px; }
+
+.msg-one-half h2 {
+  margin-bottom: 27px; }
+
+@media (max-width: 768px) {
+  .section-1 .article-one-third {
+    margin-bottom: 15px; } }

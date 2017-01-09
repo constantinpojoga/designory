@@ -25,24 +25,25 @@ p {
 }
 
 .negative-margin-top {
-  margin-top: -100px;
+  margin-top: -90px;
 }
 
 // Hero Styling
 .hero {
-  min-height: 480px;
+  min-height: 500px;
   background: $gray-1;
   border-top: 2px solid $black;
   border-bottom: 2px solid $gray-2;
   .hero-center-text {
     position: relative;
-    left: 80px;
-    top: 80px;
+    left: 95px;
+    top: 85px;
   }
   h1 {
-    margin-top: 5px;
+    margin-top: 0px;
     font-size: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 1.05em;
   }
   h3 {
     font-size: 24px;
@@ -54,17 +55,22 @@ p {
 // Article
 .section-1 {
   .article-one-third {
-    border: 1px solid $gray;
     background: white;
-    min-height: 350px;
+    min-height: 320px;
     padding: 10px;
     margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 2px 2px $gray-2;
+            box-shadow: 0px 0px 2px 2px $gray-2;
+  h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 18px 0 -10px 0; 
+  }
   .single-article:first-child {
     margin-right: 0px;
   }
     .single-article-photo {
-      // margin: 5px;
-      height: 150px; 
+      height: 145px; 
       display: block;
     }
   }
@@ -75,14 +81,15 @@ p {
 .article-photo--3 {background: $gray-3}
 
 .section-2 {
-  padding: 15px;
+  padding: 15px 100px 0 0;
   clear: both;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   .article-one-half {
-    border: 1px solid $gray;
-    height: 450px;
+    -webkit-box-shadow: 0px 0px 1px 1px $gray-2;
+            box-shadow: 0px 0px 1px 1px $gray-2;
+    height: 410px;
     margin: 0 45px 0px -15px;
-    padding: 10px;
+    padding: 12px;
     .photo-one-half {
       background-color: $gray-4;
       height: 100%;
@@ -91,12 +98,38 @@ p {
   .razda-msg {
     text-align: justify;
     font-weight: bold;
+    line-height: 1.53em;
+    margin-bottom: 105px;
     span {
+      font-size: 14px;
       color: white;
-      -webkit-text-stroke: 1px $gray-3;
-              text-stroke: 1px grey;
+      -webkit-text-stroke: 1px $gray-4;
+              text-stroke: 1px $gray-4;
+      -webkit-text-stroke-width: thin;
+              text-stroke-width: thin;
+      // text-shadow: 0px 0px 1px $gray-4;
     }
   }
 }
+
+.msg-one-half {
+  h1 {
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+  h2 {
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-1 {
+    .article-one-third {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
 
   

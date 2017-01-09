@@ -2,14 +2,18 @@
 header {
   position: relative;
   overflow: hidden;
-  // border-bottom: 1px solid grey;
   color: #111;
+  min-height: 85px;
   h1.logo {
+    margin-top: 23px;
     position: relative;
     float: left;
-    font-size: 35px;
+    font-size: 30px;
     span {
-      font-size: 13px;
+      font-size: 11px;
+      position: relative;
+      top: -9px;
+      left: -2px;
     }
   }
 }
@@ -37,6 +41,7 @@ ul {
 }
 
 li {
+  color: #111;
   margin-top: 10px;
   font-size: 12px;
   padding: 1.4em 0 1em 2em;
