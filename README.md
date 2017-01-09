@@ -1,6 +1,8 @@
 # Designory 
 ## Home assessment
 
-* app/index.html
+### Run:
+* $ npm install
+* $ gulp 
 
-* Run $gulp to compile Sass files
+Entry point: app/index.html
