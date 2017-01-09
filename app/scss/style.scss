@@ -1,0 +1,102 @@
+@import "modules/colors";
+@import "modules/normalize";
+@import "modules/colors";
+@import "modules/clearfix";
+@import "modules/grid";
+
+@import "partials/header";
+@import "partials/footer";
+@import "partials/button";
+
+* {
+  color: $text-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 13px;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+.negative-margin-top {
+  margin-top: -100px;
+}
+
+// Hero Styling
+.hero {
+  min-height: 480px;
+  background: $gray-1;
+  border-top: 2px solid $black;
+  border-bottom: 2px solid $gray-2;
+  .hero-center-text {
+    position: relative;
+    left: 80px;
+    top: 80px;
+  }
+  h1 {
+    margin-top: 5px;
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+
+// Article
+.section-1 {
+  .article-one-third {
+    border: 1px solid $gray;
+    background: white;
+    min-height: 350px;
+    padding: 10px;
+    margin-bottom: 40px;
+  .single-article:first-child {
+    margin-right: 0px;
+  }
+    .single-article-photo {
+      // margin: 5px;
+      height: 150px; 
+      display: block;
+    }
+  }
+}
+
+.article-photo--1 {background: $gray-1}
+.article-photo--2 {background: $gray-2}
+.article-photo--3 {background: $gray-3}
+
+.section-2 {
+  padding: 15px;
+  clear: both;
+  margin-bottom: 40px;
+  .article-one-half {
+    border: 1px solid $gray;
+    height: 450px;
+    margin: 0 45px 0px -15px;
+    padding: 10px;
+    .photo-one-half {
+      background-color: $gray-4;
+      height: 100%;
+    }
+  }
+  .razda-msg {
+    text-align: justify;
+    font-weight: bold;
+    span {
+      color: white;
+      -webkit-text-stroke: 1px $gray-3;
+              text-stroke: 1px grey;
+    }
+  }
+}
+
+  

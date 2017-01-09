@@ -1,0 +1,69 @@
+// NAVIGATION
+header {
+  position: relative;
+  overflow: hidden;
+  // border-bottom: 1px solid grey;
+  color: #111;
+  h1.logo {
+    position: relative;
+    float: left;
+    font-size: 35px;
+    span {
+      font-size: 13px;
+    }
+  }
+}
+
+#menu-toggle {
+  display: block;
+  float: right;
+  color: #111;
+  text-decoration: none;
+  padding: .75em;
+  border: 1px gray solid;
+  margin: 2em 1em 0 0;
+}
+
+ul {
+  clear: left;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#toggled {
+  display: none;
+  margin-right: 0;
+}
+
+li {
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 1.4em 0 1em 2em;
+  border-top: 1px gray solid;
+  text-transform: uppercase;
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #menu-toggle {
+    display: none;
+    margin-right: 0;
+  }
+  nav {
+    float: right;  
+  }
+  ul {
+    display: block !important;
+  }
+  li {
+    float: left;
+    border-top: none;
+    margin-left: 30px;
+
+  }
+}
+
+
